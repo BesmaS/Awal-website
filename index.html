@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWAL PRODUCTION</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font : Barlow Condensed -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-[#F4ECD8]">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-black shadow z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <img src="assets/images/logo-awal.png" alt="AWAL Logo" class="h-8">
+      <ul class="hidden md:flex gap-6 uppercase tracking-wide text-sm">
+        <li><a href="#services" class="hover:text-white">Services</a></li>
+        <li><a href="#portfolio" class="hover:text-white">Réalisations</a></li>
+        <li><a href="#equipe" class="hover:text-white">Équipe</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="min-h-screen flex items-center justify-center text-center px-6 pt-24">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-[#F4ECD8]" data-aos="fade-in">
+      Votre vision,<br class="hidden sm:block" /> notre réalisation
+    </h2>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-4 bg-black">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-12 text-center text-[#F4ECD8]" data-aos="fade-up">Nos services</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-[#1a1a1a] p-6 rounded shadow" data-aos="fade-up">
+          <h4 class="text-xl font-semibold mb-2">Tournage vidéo</h4>
+          <p>Captation professionnelle pour tous types de projets : clips, pub, événements.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded shadow" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">Montage & post-prod</h4>
+          <p>Montage, étalonnage, sound design et effets spéciaux sur mesure.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded shadow" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="text-xl font-semibold mb-2">Accompagnement créatif</h4>
+          <p>Conseils artistiques et storytelling pour valoriser votre message.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réalisations (Swiper) -->
+  <section id="portfolio" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Réalisations</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-[#222] h-64 rounded shadow flex items-center justify-center text-xl font-semibold">
+            Vidéo 1
+          </div>
+          <div class="swiper-slide bg-[#333] h-64 rounded shadow flex items-center justify-center text-xl font-semibold">
+            Vidéo 2
+          </div>
+          <div class="swiper-slide bg-[#444] h-64 rounded shadow flex items-center justify-center text-xl font-semibold">
+            Vidéo 3
+          </div>
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section id="equipe" class="py-20 px-4 bg-black">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Notre équipe</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-[#1a1a1a] p-6 rounded shadow text-center" data-aos="flip-left">
+          <img src="assets/images/avatar1.jpg" class="w-24 h-24 mx-auto rounded-full mb-4 object-cover" alt="Nom Prénom">
+          <h4 class="text-xl font-semibold">Nom Prénom</h4>
+          <p class="text-gray-400">Réalisateur</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded shadow text-center" data-aos="flip-left" data-aos-delay="100">
+          <img src="assets/images/avatar2.jpg" class="w-24 h-24 mx-auto rounded-full mb-4 object-cover" alt="Nom Prénom">
+          <h4 class="text-xl font-semibold">Nom Prénom</h4>
+          <p class="text-gray-400">Monteur</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded shadow text-center" data-aos="flip-left" data-aos-delay="200">
+          <img src="assets/images/avatar3.jpg" class="w-24 h-24 mx-auto rounded-full mb-4 object-cover" alt="Nom Prénom">
+          <h4 class="text-xl font-semibold">Nom Prénom</h4>
+          <p class="text-gray-400">Directeur artistique</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-4">
+    <div class="max-w-xl mx-auto" data-aos="fade-up">
+      <h3 class="text-3xl font-bold mb-12 text-center">Contact</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Votre nom" class="w-full bg-[#1a1a1a] text-[#F4ECD8] border border-[#333] p-3 rounded" required>
+        <input type="email" placeholder="Votre email" class="w-full bg-[#1a1a1a] text-[#F4ECD8] border border-[#333] p-3 rounded" required>
+        <textarea placeholder="Votre message" class="w-full bg-[#1a1a1a] text-[#F4ECD8] border border-[#333] p-3 rounded" rows="5" required></textarea>
+        <label class="block text-sm">
+          <input type="checkbox" class="mr-2"> Je souhaite faire une demande de devis
+        </label>
+        <button type="submit" class="bg-[#F4ECD8] text-black px-6 py-3 rounded hover:bg-white transition">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-[#aaa]">
+    &copy; 2025 AWAL PRODUCTION – Tous droits réservés.
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      spaceBetween: 30,
+      slidesPerView: 1,
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
